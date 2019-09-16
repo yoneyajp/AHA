@@ -1,0 +1,31 @@
+Proposed Community Group Name:
+    Mitigation practices for "Homograph attacks" at user interface
+
+Propoesd Community Group Description:
+    Introduction
+      IDN homograph attack is widely used for phishing users to malicious web sites. There are several countermeasures for this attack, but they depend on Web applications' implementations.
+      From the end users' perspective, countermeasures should be common between Web applications to get better user experience.
+      In this community group, we discuss possible countermeasures against IDN homograph attacks on Web applications, and draft guidelines.
+
+    Scope of this community group
+      In this group, we first focus on understanding visually similar characters in the Unicode character set. Although several other attack vectors exploit the visual similarity of characters, e.g., typosquatting or hyphenations, we leave these issues for future topics.
+      We aim at extracting pairs of visually similar characters from the Unicode character set in a MECE manner. To this end, we start with using the Unicode's confusables data and some other existing lists. Our goal is to extend these lists and compile the unified character set that lists all the possible pairs of visually similar characters.
+      On top of the unified visually similar characters set, we discuss possible countermeasures against the attacks that exploit such characters, e.g., detecting IDN homographs. We try to make the Web User Interface usable, implying that we do not adopt the solution to display IDN as A-Label (Punycode) because it should sacrifice the advantage of adopting IDN. 
+      After collecting some possible countermeasures, we draft Web User Interface guideline against IDN homograph attacks for Web applications.
+
+    Timeline
+      Sep/2019 have breakout session at TPAC2019
+      Sep/2019 Establish this community group
+      Oct/2019 Collect background information such as:
+               set of visually similar characters
+               primary fonts used for displaying URLs on Web applications
+               existing countermeasures employed in major Web browsers
+               possible countermeasures that do not exist currently
+      Nov/2019 draft guideline for Web applications
+               bring issues to wider communities (e.g. ICANN, IETF)
+
+Proposed Community Group Short Name:
+    AHA (Anti-Homograph-Attacks)
+
+Inaugural members:
+    TBD
